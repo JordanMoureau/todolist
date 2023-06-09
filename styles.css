@@ -1,0 +1,250 @@
+@font-face {   
+    font-family: "Oswald Bold";   
+    src: url('fonts/Oswald-Bold.ttf') format('truetype');             
+  }
+  
+  @font-face {
+    font-family: "Oswald Light";
+    src: url('fonts/Oswald-Light.ttf') format('truetype'); 
+  }
+
+
+body {
+    background-color:#c6f7f7;
+    display:block;
+    padding: 10px 0px;
+    margin:0px;
+}
+
+.header{
+    background-image: url(images/background.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:880px;
+    width:100%;
+}
+
+h1 {
+    font-family: "Oswald Bold"; 
+    text-transform: uppercase;
+    color: #fff;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 60px;
+    margin-left:18px;
+}
+
+h2 {
+    font-family: "Oswald Light"; 
+    color: #fff;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 30px;
+    margin-left:18px;
+}
+
+
+p {
+    font-family: "Oswald Bold"; 
+    color: #ffb6d4;
+    letter-spacing:1px;
+    font-size: 28px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    word-wrap: break-word;
+    
+}
+
+a{
+    color: inherit;
+}
+
+::selection {
+    background: #fff;
+    color:#c6f7f7
+  }
+  ::-moz-selection {
+    background: #fff;
+    color:#c6f7f7;
+  }
+
+
+.whole-container{
+    margin:0 auto;
+    display:block;
+    width:900px;
+    overflow: auto;
+    padding-bottom: 150px;
+}
+
+
+.longterm{
+  width:890px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 5px solid #ffb6d4;
+}
+
+.longterm-head{
+    background-color: #ffdeed;
+    width:860px;
+    padding:15px;
+}
+
+#inputField{
+    outline: none;
+    font-family: "Oswald Bold";
+    color: #ffb6d4;
+    border: none;
+    border-bottom: 2px dashed #ffdeed;
+    font-size: 28px;
+    letter-spacing:1px;
+    margin: 20px 35px;
+    width: 720px;
+}
+
+#addToDo{
+    background-color: white;
+    border: none;
+    color:#ffb6d4;
+    font-family: "Oswald Bold"; 
+    font-size: 28px;
+    margin-left:2px;
+    
+}
+
+#addToDo:hover{
+    cursor: pointer;
+    color:#c6f7f7;
+}
+
+.to-dos{
+    margin: 37px;
+}
+
+.todo-contained{
+    overflow: auto;
+    display:block;
+    padding-bottom:42px;
+    clear: both;
+}
+
+.todo-container {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    padding-left: 35px;
+    padding-right: 45px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: top;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .todo-container input {
+    position: absolute;
+    opacity: 0;
+    cursor:none;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 3px solid #ffb6d4;
+    border-radius: 4px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .todo-container:hover input ~ .checkmark {
+    background-color: #ffdeed;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .todo-container input:checked ~ .checkmark {
+    background-color: #fff;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .todo-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .todo-container .checkmark:after {
+    left: 3px;
+    top: -6px;
+    width: 8px;
+    height: 15px;
+    border: solid #ffe783;
+    border-width: 0 6px 6px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+
+.today{
+    width:400px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 5px solid #ffb6d4;
+    float:left;
+    margin-right: 80px;
+  }
+  
+  .today-head{
+      background-color: #ffdeed;
+      width:370px;
+      padding:15px;
+  }
+
+  #inputFieldToday{
+    outline: none;
+    font-family: "Oswald Light";
+    color: #ffb6d4;
+    border: none;
+    border-bottom: 2px dashed #ffdeed;
+    font-size: 28px;
+    letter-spacing:1px;
+    margin: 20px 35px;
+    width: 270px;
+}
+
+
+.this-week{
+    width:400px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 5px solid #ffb6d4;
+    float:left;
+    
+  }
+
+.madeby{
+    float:right;
+    padding:25px;
+}
