@@ -8,6 +8,7 @@ addToDoButton.addEventListener('click', function() {
 
     newLabel.classList.add('todo-container');
     longTermList.appendChild(newLabel);
+
     
     var newCheckBox = document.createElement("input");
 
@@ -43,9 +44,9 @@ input.addEventListener('keypress', function(event) {
 
 
 
-function appendChildClass(newElement, elementType, elementClass, parent) {
-    newElement = document.createElement(elementType);
+function appendChildClass(elementType, elementClass, parent) {
+    let newElement = document.createElement(elementType);
 
     newElement.classList.add(elementClass);
-    parent.appendChild(newLabel);
+    parent.appendChild(newElement);
 }
