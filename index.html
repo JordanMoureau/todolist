@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link href="style.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favi.png"/>
 
     <title>Document</title>
@@ -15,25 +15,23 @@
     <div class="longterm">
     <div class="longterm-head"> <h1>long term goals</h1> </div>
         <div class="todo-contained">
-            <input id="inputField" type="text">
-            <button id="addToDo">+</button>
+            <input id="inputField"  class="inputField" type="text">
+            <button id="addToDo" class="addToDo">+</button>
             <div class="to-dos" id="longTermContainer">
-               
-
         
             </div>
            
         </div>
     </div>
 
+    
     <div class="today">
         <div class="today-head"> <h1>today</h1> </div>
         <div class="todo-contained">
-            <input id="inputFieldToday" type="text">
-            <button id="addToDo">+</button>
+            <input id="inputFieldToday" class="inputFieldToday" type="text">
+            <button id="todayAdd" class="addToDo">+</button>
             <div class="to-dos" id="todayContainer">
-
-
+                
             </div>
         </div>
     </div>
@@ -41,15 +39,18 @@
     <div class="this-week">
         <div class="today-head"> <h1>This Week</h1> </div>
         <div class="todo-contained">
-            <input id="inputFieldToday" type="text">
-            <button id="addToDo">+</button>
-            <div class="to-dos" id="thisWeekContainer"></div>
+            <input id="inputFieldWeek" class="inputFieldToday" type="text">
+            <button id="weekAdd" class="addToDo">+</button>
+            <div class="to-dos" id="weekContainer">
+                
+            </div>
         </div>
     </div>
 
+
 </div>
 
-    <script src="script.js"></script>
+    <script src="script.min.js"></script>
    <div class="madeby"><h2>made by <a href="https://github.com/JordanMoureau" target="_blank"> jordan <3</a></h2></div> 
 </body>
 </html>

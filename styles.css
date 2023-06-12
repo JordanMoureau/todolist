@@ -93,7 +93,7 @@ a{
     padding:15px;
 }
 
-#inputField{
+.inputField{
     outline: none;
     font-family: "Oswald Bold";
     color: #ffb6d4;
@@ -105,7 +105,7 @@ a{
     width: 720px;
 }
 
-#addToDo{
+.addToDo{
     background-color: white;
     border: none;
     color:#ffb6d4;
@@ -115,7 +115,7 @@ a{
     
 }
 
-#addToDo:hover{
+.addToDo:hover{
     cursor: pointer;
     color:#c6f7f7;
 }
@@ -221,9 +221,9 @@ a{
       padding:15px;
   }
 
-  #inputFieldToday{
+  .inputFieldToday{
     outline: none;
-    font-family: "Oswald Light";
+    font-family: "Oswald Bold";
     color: #ffb6d4;
     border: none;
     border-bottom: 2px dashed #ffdeed;
@@ -248,3 +248,57 @@ a{
     float:right;
     padding:25px;
 }
+
+.todo-container-today {
+  display: inline-block;
+  width: 80%;
+  position: relative;
+  padding-left: 35px;
+  padding-right: 45px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: top;
+}
+
+  /* Hide the browser's default checkbox */
+  .todo-container-today input {
+    position: absolute;
+    opacity: 0;
+    cursor:none;
+    height: 0;
+    width: 0;
+  }
+
+
+  /* On mouse-over, add a grey background color */
+  .todo-container-today:hover input ~ .checkmark {
+    background-color: #ffdeed;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .todo-container-today input:checked ~ .checkmark {
+    background-color: #fff;
+  }
+  
+  
+  /* Show the checkmark when checked */
+  .todo-container-today input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .todo-container-today .checkmark:after {
+    left: 3px;
+    top: -6px;
+    width: 8px;
+    height: 15px;
+    border: solid #ffe783;
+    border-width: 0 6px 6px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
